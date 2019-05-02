@@ -1,18 +1,18 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1><Timer :auto-start="true" :default-val="1555570800000" /></h1>
+    <!--<img alt="xhw" src="../assets/profile.png">-->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import Timer from '@/components/Timer.vue';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    Timer,
   },
 };
 </script>
