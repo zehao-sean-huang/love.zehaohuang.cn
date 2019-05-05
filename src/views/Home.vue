@@ -4,6 +4,9 @@
       <h1 id="home-background-counter" class="display-1">
         <Timer :auto-start="true" :default-val="1555570800000"/>
       </h1>
+      <h1 id="home-background-counter-mobile">
+        <Timer :auto-start="true" :default-val="1555570800000"/>
+      </h1>
     </div>
   </div>
 </template>
@@ -43,4 +46,32 @@ export default {
     color: rgba(255,255,255,0.75);
     font-family: 'ZCOOL KuaiLe', serif;
   }
+
+  #home-background-counter-mobile {
+    position: relative;
+    top: 50%;
+    color: rgba(255,255,255,0.75);
+    font-family: 'ZCOOL KuaiLe', serif;
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (max-width: 992px) {
+    #home-background-counter {
+      display: none;
+    }
+    #home-background-counter-mobile {
+      display: block;
+    }
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    #home-background-counter {
+      display: block;
+    }
+    #home-background-counter-mobile {
+      display: none;
+    }
+  }
+
 </style>
