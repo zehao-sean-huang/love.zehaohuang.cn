@@ -10,10 +10,10 @@ import 'bootstrap';
 
 // import plugins individually - require exports-loader
 import 'bootstrap/js/dist/modal'
-import 'bootstrap/js/dist/tooltip'
+import 'bootstrap/js/dist/tooltip';
 
 // import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/scss/bootstrap.scss'
+import 'bootstrap/scss/bootstrap.scss';
 
 Vue.config.productionTip = false;
 

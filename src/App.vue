@@ -2,6 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
+      <router-link to="/stories">Stories</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
@@ -18,6 +19,9 @@
 }
 #nav {
   padding: 30px;
+  top: 0;
+  position: fixed;
+  transition: top 0.3s;
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -27,3 +31,16 @@
   }
 }
 </style>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
