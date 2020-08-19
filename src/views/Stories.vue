@@ -9,7 +9,7 @@
                         :date = "'2019/04/27'"
                         :flipped = False
                 />
-                <card   :story_title = "'Friend-Friend'"
+                <card   :story_title = "'Friend\'s Friend'"
                         :content =  "'Back to the time that we are still friend... '"
                         :picture = "'story2.jpg'"
                         :date = "'2019/03/29'"
